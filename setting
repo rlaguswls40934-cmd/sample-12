@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample-name-team</title>
+    <style>
+        /* 웹폰트 적용 (Pretendard 폰트로 깔끔한 텍스트 렌더링) */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        /* 기본 여백 초기화 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 전체 배경 및 가운데 정렬 */
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            /* 부드러운 보라/파랑 그라데이션 */
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 카드 UI 디자인 */
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 500px; /* PC에서는 최대 500px까지만 커짐 */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* 마우스를 올렸을 때 살짝 떠오르는 효과 */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 제목 영역 */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        /* 소개글 영역 */
+        .intro {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            color: #555;
+            text-align: center;
+            word-break: keep-all; /* 단어 단위로 줄바꿈되어 깔끔하게 보임 */
+        }
+
+        /* 작업 내용 영역 */
+        .work-details {
+            margin-bottom: 30px;
+        }
+
+        .work-details h2 {
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+        }
+
+        .work-details ul {
+            list-style: none; /* 기본 점(bullet) 제거 */
+        }
+
+        .work-details li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: #4a5568;
+            padding-left: 8px;
+        }
+
+        /* 마무리 문구 영역 */
+        .closing {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #666;
+            border-top: 1px dashed #cbd5e0;
+            padding-top: 20px;
+            word-break: keep-all;
+        }
+
+        /* 반응형 (모바일 화면 최적화) */
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1>sample-name-team</h1>
+            <p class="subtitle">GitHub Pages 배포 실습 프로젝트</p>
+        </header>
+        
+        <section class="intro">
+            <p>이 웹페이지는 GitHub 리포지터리 생성, 파일 업로드, 수정, GitHub Pages 배포 과정을 실습하기 위해 제작되었습니다.</p>
+        </section>
+        
+        <section class="work-details">
+            <h2>작업 내용</h2>
+            <ul>
+                <li>1) GitHub 개인 리포지터리 생성</li>
+                <li>2) 기본 HTML/CSS 파일 업로드</li>
+                <li>3) GitHub Pages 설정</li>
+                <li>4) 웹페이지 공개 확인</li>
+            </ul>
+        </section>
+        
+        <footer class="closing">
+            <p>GitHub를 활용해 프로젝트 파일을 관리하고 웹페이지로 배포하는 과정을 이해할 수 있었습니다.</p>
+        </footer>
+    </div>
+</body>
+</html>
